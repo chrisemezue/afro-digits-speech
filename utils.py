@@ -5,9 +5,7 @@ import torch
 import torchaudio
 from torch import nn
 from torch.utils.data import DataLoader, WeightedRandomSampler
-from okwugbedataset_eval import OkwugbeDataset
-#from urbansounddataset import OkwugbeDataset
-#from cnn import CNNNetwork
+from okwugbedataset import OkwugbeDataset
 
 
 def dump_json(thing,file):
@@ -115,7 +113,7 @@ def train_single_epoch(model, data_loader, loss_fn, optimiser, device,feature_ex
 
     return loss_item
 
-def train(model, data_loader,valid_dataloader,loss_fn, optimiser, device, epochs,SAVE_PATH,LOSS_JSON_FILE,ACC_JSON_FILE,EVAL_STEP,feature_extractor):
+def train(args,model, data_loader,valid_dataloader,loss_fn, optimiser, device, epochs,SAVE_PATH,LOSS_JSON_FILE,ACC_JSON_FILE,feature_extractor):
     best_acc = 0
     for i in range(epochs):
         print(f"Epoch {i}")
@@ -133,7 +131,7 @@ def train(model, data_loader,valid_dataloader,loss_fn, optimiser, device, epochs
         dump_json(loss_array,LOSS_JSON_FILE)
 
 
-        if i%EVAL_STEP==0:
+        if i%args.eval_step==0:
             acc = evaluate(model,valid_dataloader,device)
             print(f'Validation accuracy: {acc}')
 
@@ -179,22 +177,22 @@ def evaluate(model, data_loader,device):
     return final_acc
 
 
-def get_dataset(transformation,SAMPLE_RATE,device,train_path,test_path):
-    usd = OkwugbeDataset(transformation,
-                            SAMPLE_RATE,
+def get_dataset(args,transformation,SAMPLE_RATE_WAV,device,train_path,test_path):
+    usd = OkwugbeDataset(args,transformation,
+                            SAMPLE_RATE_WAV,
                             train_path,
                             test_path,
                             'train',
                             device)
-    valid_dataset = OkwugbeDataset(transformation,
-                            SAMPLE_RATE,
+    valid_dataset = OkwugbeDataset(args,transformation,
+                            SAMPLE_RATE_WAV,
                             train_path,
                             test_path,
                             'valid',
                             device)
     if test_path is not None:
-        test_dataset = OkwugbeDataset(transformation,
-                            SAMPLE_RATE,
+        test_dataset = OkwugbeDataset(args,transformation,
+                            SAMPLE_RATE_WAV,
                             train_path,
                             test_path,
                             'test',

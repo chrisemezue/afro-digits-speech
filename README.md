@@ -22,8 +22,8 @@ The purpose of this project is to show the effectiveness of community-based crow
 
 1. Clone the repo: `https://github.com/chrisemezue/afro-digits-speech.git`
 2. Create a python environment and install the required packages `pip install -r requirements.txt`
-3. Clone the afro digits dataset: `git clone https://huggingface.co/datasets/chrisjay/crowd-speech-africa`. 
-4. After cloning , your `AUDIO_HOMEPATH` is the directory where you cloned it including the `data` folder. For example, if I cloned the dataset in the `my_personal_dir` directorym then my `AUDIO_HOMEPATH` is `my_personal_dir/crowd-speech-africa/data`. 
+3. Clone [the afro digits dataset](https://huggingface.co/datasets/chrisjay/crowd-speech-africa): `git clone https://huggingface.co/datasets/chrisjay/crowd-speech-africa`. 
+4. After cloning , your `AUDIO_HOMEPATH` is the directory where you cloned it including the `data` folder. For example, if I cloned the dataset in the `my_personal_dir` directory then my `AUDIO_HOMEPATH` is `my_personal_dir/crowd-speech-africa/data`. 
 5. To perform one round of finetuning run the codeblock below:
 
 ```bash
@@ -39,4 +39,4 @@ python -m pdb train.py \
 
 | Please refer [here](https://github.com/chrisemezue/afro-digits-speech/blob/main/train.py#L188) for the full list of arguments and their meanings.
 
-- Refer [`job.sh`](job.sh) for the job file to run it on cluster 
+- Refer to [`job.sh`](job.sh) for the job file to run it on cluster 

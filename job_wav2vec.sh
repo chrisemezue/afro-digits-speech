@@ -7,6 +7,7 @@ source /home/mila/c/chris.emezue/scratch/okwugbe-afr/bin/activate
 
 python -m pdb train.py \
 --experiment_directory=/home/mila/c/chris.emezue/afro-digits-speech/test \
+--audio_homepath=/home/mila/c/chris.emezue/scratch/afr/data \
 --filename=afro_ibo_test_discard \
 --save_model_path=/home/mila/c/chris.emezue/scratch/afr/test \
 --multilingual_model_path=/home/mila/c/chris.emezue/scratch/afr/afrospeech-wav2vec-all-6.pth \

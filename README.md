@@ -22,9 +22,17 @@ The purpose of this project is to show the effectiveness of community-based crow
 
 1. Clone the repo: `https://github.com/chrisemezue/afro-digits-speech.git`
 2. Create a python environment and install the required packages `pip install -r requirements.txt`
-3. Assume your training data path is at `/..igbo_ibo_audio_data.csv` and the name you want for the experiment is `afro_ibo`, then you run experiments the following way below:
-```bash
-python train.py afro_ibo /..igbo_ibo_audio_data.csv  
-```
+3. Clone the afro digits dataset: `git clone https://huggingface.co/datasets/chrisjay/crowd-speech-africa`
+4. To perform one round of finetuning run 
 
+```bash
+python -m pdb train.py \
+--experiment_directory=/home/mila/c/chris.emezue/afro-digits-speech/test \
+--audio_homepath=/home/mila/c/chris.emezue/scratch/afr/data \
+--filename=afro_ibo \
+--save_model_path=/home/mila/c/chris.emezue/scratch/afr/test \
+--train_path=/home/mila/c/chris.emezue/afro-digits-speech/training_data/igbo_ibo_audio_data.csv \
+--valid_path=/home/mila/c/chris.emezue/afro-digits-speech/validation_data/VALID_igbo_ibo_audio_data.csv \
+--num_epochs=1
+```
 

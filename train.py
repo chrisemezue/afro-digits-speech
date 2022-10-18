@@ -186,6 +186,8 @@ if __name__=="__main__":
     from argparse import ArgumentParser
 
     parser = ArgumentParser('Afro Digits Speech Finetuning with WaV2Vec')
+    parser.add_argument('--audio_homepath', type=str, default='crowd-speech-africa/data',
+        help='Path to afro digit audio files. Defaults to current working directory')
     parser.add_argument('--experiment_directory', type=str, default='./',
         help='Direcory for experiment. Deafults to current working directory')
     parser.add_argument('--metrics_folder', type=str, default='metrics',

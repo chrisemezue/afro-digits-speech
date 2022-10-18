@@ -1,6 +1,6 @@
 audio_path,transcript,lang,lang_code,gender,age,country,accent
-/home/mila/c/chris.emezue/scratch/afr/data/p34rQlhMwuOkmqhltKEd8lYW2xYPN3do/audio.wav,4,rundi,run,Male,29.0,France,
-/home/mila/c/chris.emezue/scratch/afr/data/tkyZJyB9IS2PJ8HNgqOybUSdnrTl48up/audio.wav,5,rundi,run,Male,29.0,France,
-/home/mila/c/chris.emezue/scratch/afr/data/tF3MBOD3L6tHfmRYoO8u1kdwgUlaMPZr/audio.wav,9,rundi,run,Male,29.0,France,
-/home/mila/c/chris.emezue/scratch/afr/data/Qlqz7bCCQUJuZYiTDgLxFhElL4AncAH7/audio.wav,7,rundi,run,Male,29.0,France,
-/home/mila/c/chris.emezue/scratch/afr/data/EsElOIcf8DSiOTn1uoihsYiVKjDWXwKH/audio.wav,8,rundi,run,Male,25.0,France,
+AUDIO_PATH_HERE/p34rQlhMwuOkmqhltKEd8lYW2xYPN3do/audio.wav,4,rundi,run,Male,29.0,France,
+AUDIO_PATH_HERE/tkyZJyB9IS2PJ8HNgqOybUSdnrTl48up/audio.wav,5,rundi,run,Male,29.0,France,
+AUDIO_PATH_HERE/tF3MBOD3L6tHfmRYoO8u1kdwgUlaMPZr/audio.wav,9,rundi,run,Male,29.0,France,
+AUDIO_PATH_HERE/Qlqz7bCCQUJuZYiTDgLxFhElL4AncAH7/audio.wav,7,rundi,run,Male,29.0,France,
+AUDIO_PATH_HERE/EsElOIcf8DSiOTn1uoihsYiVKjDWXwKH/audio.wav,8,rundi,run,Male,25.0,France,

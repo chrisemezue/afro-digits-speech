@@ -1,7 +1,7 @@
 audio_path,transcript,lang,lang_code,gender,age,country,accent
-/home/mila/c/chris.emezue/scratch/afr/data/YEPqZ3CHDppprriDgoGA9MvOgRNMf43F/audio.wav,3,yoruba,yor,Male,,Nigeria,Standard Yoruba 
-/home/mila/c/chris.emezue/scratch/afr/data/Cn8ve720zqPppRPdI2TXbkwHNdmtVUPf/audio.wav,5,yoruba,yor,Male,,Nigeria,Standard Yoruba 
-/home/mila/c/chris.emezue/scratch/afr/data/2mzLDDHVy5zA4cH5NPK0VU3rtZKVZ2kK/audio.wav,7,yoruba,yor,,,Nigeria,Standard Yoruba
-/home/mila/c/chris.emezue/scratch/afr/data/Xbiq3Nv8JSko22be3orDMcDurESjl5xc/audio.wav,7,yoruba,yor,Female,,United States,
-/home/mila/c/chris.emezue/scratch/afr/data/zb6CyNeMcgyfSk5LvFzhmjgDbeC2goeM/audio.wav,6,yoruba,yor,Female,,United States,
-/home/mila/c/chris.emezue/scratch/afr/data/Y2Kr1zV41BVuW3gsaK1LCSS0d8y1P023/audio.wav,9,yoruba,yor,Female,,United States,
+AUDIO_PATH_HERE/YEPqZ3CHDppprriDgoGA9MvOgRNMf43F/audio.wav,3,yoruba,yor,Male,,Nigeria,Standard Yoruba 
+AUDIO_PATH_HERE/Cn8ve720zqPppRPdI2TXbkwHNdmtVUPf/audio.wav,5,yoruba,yor,Male,,Nigeria,Standard Yoruba 
+AUDIO_PATH_HERE/2mzLDDHVy5zA4cH5NPK0VU3rtZKVZ2kK/audio.wav,7,yoruba,yor,,,Nigeria,Standard Yoruba
+AUDIO_PATH_HERE/Xbiq3Nv8JSko22be3orDMcDurESjl5xc/audio.wav,7,yoruba,yor,Female,,United States,
+AUDIO_PATH_HERE/zb6CyNeMcgyfSk5LvFzhmjgDbeC2goeM/audio.wav,6,yoruba,yor,Female,,United States,
+AUDIO_PATH_HERE/Y2Kr1zV41BVuW3gsaK1LCSS0d8y1P023/audio.wav,9,yoruba,yor,Female,,United States,

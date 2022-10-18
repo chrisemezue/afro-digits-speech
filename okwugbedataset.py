@@ -90,6 +90,9 @@ class OkwugbeDataset(torch.utils.data.Dataset):
     def load_audio_item(self, d: list):
         utterance = int(d[1])
         wav_path = d[0]
+        # Replace AUDIO_PATH_HERE with audio_homepath
+
+        wav_path = wav_path.replace('AUDIO_PATH_HERE',self.args.audio_homepath)
         waveform, sample_rate = torchaudio.load(wav_path)
         waveform = waveform.to(self.device)
 

@@ -7,13 +7,10 @@ The purpose of this project is to show the effectiveness of community-based crow
 
 ###
 
-- Validation data are saved [here](metrics_valid).
+- Validation data are saved [here](validation_data).
 - The data is a csv where the first column is the audio path and the second column is the transcription.
 - `train.py` is the main codebase that handles everything (from creating the datalader,training/finetuning, to pushing trained model to hub).
-- `train.py` takes 3 arguments: 
-    1. the file name
-    2. the path to the train data (this will usually be split to training and validation set internally)
-    3. [OPTIONAL] the path to the test data. If this argument is not giveb (which was our case because the data set was too small to afford a held out  test set), evaluation will only be done on the validation set.
+- Please refer [here](https://github.com/chrisemezue/afro-digits-speech/blob/main/train.py#L188) for the full list of arguments and their meanings.
 
 
 

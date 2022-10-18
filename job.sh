@@ -5,7 +5,7 @@ module load python/3
 source /home/mila/c/chris.emezue/scratch/okwugbe-afr/bin/activate
 
 
-python -m pdb train.py \
+python train.py \
 --experiment_directory=/home/mila/c/chris.emezue/afro-digits-speech/test \
 --audio_homepath=/home/mila/c/chris.emezue/scratch/afr/data \
 --filename=afro_ibo_test_discard \
